@@ -1,0 +1,64 @@
+body 
+{
+    background-image: url("../../img/paimon-piece.png");
+    background-repeat: no-repeat;
+    /* background-position: center center; */
+	  /* box-align: middle;  */
+    background-size: cover;
+    background-attachment: fixed;
+}
+.gensheader 
+{
+  width: 100%;
+  color: whitesmoke;
+  font-family: "Brush Script MT", cursive;
+  -webkit-text-stroke: 0.01px rgb(73, 63, 63);
+  text-align: center;
+  line-height: 0%;
+  font-size: 5vmin;
+}
+.artable
+{
+  border-collapse: collapse;
+  border: solid rgb(97, 97, 97);
+  width: 85%;
+  /* float: right; */
+  margin: 10% 0 0 auto;
+  background-color: rgba(229, 231, 231, 0.795);
+  text-align: center;
+  align-items: center;
+  color: rgb(97, 59, 33);
+}
+.artable td, th
+{
+  border: solid rgb(97, 97, 97);
+} 
+.artable tbody tr:before {
+  display: table-cell;
+  vertical-align: middle;
+  color: #978777;
+}
+tr:nth-child(even)
+{
+  background-color: rgba(173, 121, 138, 0.158);
+}
+#copywrite
+{
+  /* position: absolute;  */
+  bottom: 0;
+  color:rgb(76, 90, 121);
+  text-align: center !important;
+}
+.addform
+{
+  margin-top: 15%;
+}
+.desc
+{
+  position: fixed;
+  font-size: 3vmin;
+  top: 0%;
+  width: 15%;
+  color: rgb(68, 44, 28);
+  background-color: rgba(255, 255, 255, 0.521);
+}

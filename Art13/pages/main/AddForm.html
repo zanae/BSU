@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="ru">
+    <head>
+        <meta charset="utf-8">
+        <link rel="stylesheet" href="../css/AddForm.css">
+        <title>Add Form</title>
+        <script>
+            let count = 0;
+            function AddElement()
+            {
+                let formData =  {
+                    ItemName : document.item_form.ItemName.value,
+                    SetName :document.item_form.SetName.value,
+                    Descr : document.item_form.Descr.value,
+                    Source :document.item_form.Source.value,
+                    // file : document.item_form.Img.value,
+                }  
+                count++;
+                if (count == 1)
+                {
+                    let table = document.createElement('table');
+                    table.id = 'demotable';
+                    let thead = table.createTHead()
+                    let tbody = table.createTBody()
+                    document.getElementById('DemoElems').appendChild(table);
+                    let row = thead.insertRow(0);
+                    // let N = row.insertCell(0);
+                    // N.innerHTML = "№";
+                    // let heading_1 = row.insertCell(1)
+                    // heading_1.innerHTML = "Название"
+                    // let heading_2 = row.insertCell(2)
+                    // heading_2.innerHTML = "Набор артефактов ";
+                    // let heading_3 = row.insertCell(3)
+                    // heading_3.innerHTML = "Описание";
+                    // let heading_4 = row.insertCell(4)
+                    // heading_4.innerHTML = "Источники";
+                    // let heading_5= row.insertCell(5)
+                    // heading_5.innerHTML = "Картинка";
+                    let heading_0 = document.createElement('th');
+                    heading_0.innerHTML = "№";
+                    let heading_1 = document.createElement('th');
+                    heading_1.innerHTML = "Название";
+                    let heading_2 = document.createElement('th');
+                    heading_2.innerHTML = "Набор артефактов ";
+                    let heading_3 = document.createElement('th');
+                    heading_3.innerHTML = "Описание";
+                    let heading_4 = document.createElement('th');
+                    heading_4.innerHTML = "Источники";
+                    // let heading_5 = document.createElement('th');
+                    // heading_5.innerHTML = "Картинка";
+                    row.appendChild(heading_0);
+                    row.appendChild(heading_1);
+                    row.appendChild(heading_2);
+                    row.appendChild(heading_3);
+                    row.appendChild(heading_4);
+                    // row.appendChild(heading_5);
+                }
+                let row = document.getElementById('demotable').insertRow(count);
+                let N = row.insertCell(0);
+                N.innerHTML = count;
+                let cell1 = row.insertCell(1);
+                cell1.innerHTML = formData.ItemName;
+                let cell2 = row.insertCell(2);
+                cell2.innerHTML = formData.SetName;
+                let cell3 = row.insertCell(3);
+                cell3.innerHTML = formData.Descr;
+                let cell4 = row.insertCell(4);
+                cell4.innerHTML = formData.Source;
+                // let cell5 = row.insertCell(5);
+                // cell5.innerHTML = formData.file;
+            }
+            function Clear()
+            {
+                let del = confirm("Удалить таблицу?");
+                if (!del) 
+                    return false;
+                else {
+                    document.getElementById('demotable').remove();
+                    count = 0;
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <h1 class="gensheader">Form for artifact</h1>
+        <div class="addform">
+            <form name="item_form"> 
+                <!-- action="GenshinArt.html" method="post" -->
+                <ol>
+                    <li>
+                        <label for="ItemName">Название</label>
+                        <input type="text" id="ItemName" name="ItemName" size="50" placeholder="Имя артефакта">
+                    </li>
+                    <li>
+                        <label for="SetName">Набор артефактов</label>
+                        <select id="SetName" name="SetName">
+                            <option value="Кокон сладких грёз">Кокон сладких грёз</option>
+                            <option value="Моллюск морских красок">Моллюск морских красок</option>
+                            <option value="Отголоски подношения">Отголоски подношения</option>
+                            <option value="Позолоченные сны">Позолоченные сны</option>
+                            <option value="Цветок потерянного рая">Цветок потерянного рая</option>
+                        </select>
+                    </li>
+                    <li>
+                        <label for="Descr">Описание</label>
+                        <textarea id="Descr" name="Descr" cols="50" rows="5" placeholder="Описание артефакта"></textarea>
+                    </li>
+                    <li>
+                        <label for="Source">Источники</label>
+                        <textarea id="Source" name="Source" cols="50" rows="5" placeholder="Откуда взято"></textarea>
+                    </li>
+                    <!-- <li>
+                        <label for="Img">Картинка</label>
+                        <input type="file" id="Img" name="Img" accept="image/*">
+                    </li> -->
+                </ol>
+                <button type="submit" onClick="AddElement(); return false">Сохранить</button>
+                <button onClick="Clear(); return false">Очистить</button>
+            </form>
+        </div> 
+        <div id = "DemoElems"> </div>
+        <p id="copywrite">&copy; 2022. &laquo;Cognosphere&raquo;. Все права защищены </p>
+    </body>
+</html>

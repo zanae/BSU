@@ -1,0 +1,68 @@
+body
+{
+    background-image: url("../../img/итто.png");
+    background-repeat: no-repeat;
+    background-position: center center;
+    background-size: auto;
+    background-position: top;
+}
+h1
+{
+    text-align: center;
+    font-family: 'Monotype Corsiva', sans-serif;
+    font-size: 300%;
+    color: rgb(255, 223, 223);
+    -webkit-text-stroke: 0.01px rgb(97, 76, 76);
+}
+h2
+{
+    text-align: center;
+    font-family: 'Monotype Corsiva', sans-serif;
+    font-size: 200%;
+    color: rgb(141, 207, 191);
+}
+a
+{
+    -webkit-text-stroke: 0.01px rgb(97, 76, 76);
+    color: rgb(255, 245, 214);
+}
+.description
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: rgb(255, 243, 229);
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+.move_text_to_the_right
+{
+    text-align: right;
+}
+.move_text_to_the_left
+{
+    text-align: left;
+}
+.sources
+{
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+}
+.iconleft
+{
+    float: left;
+}
+.iconright
+{
+    float: right;
+}
+#copyright
+{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    font-size: 120%;
+}
+#main 
+{
+    float: right;
+    bottom: 0;
+}

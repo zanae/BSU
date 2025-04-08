@@ -1,0 +1,99 @@
+* {
+  box-sizing: border-box;
+}
+body 
+{
+  background-image: url("../../img/paimon-piece.png");
+  background-size: cover;
+  background-attachment: fixed;
+}
+header > h1 
+{
+  color: rgb(179, 174, 154);
+  font-family: "Brush Script MT", cursive;
+  text-align: center;
+}
+.navbar
+{
+  background-color: rgb(241, 241, 235);
+  color: black;
+}
+.nav-link
+{
+  color: black;
+}
+/* .artable
+{
+  
+  border-collapse: collapse;
+  border: solid rgb(97, 97, 97);
+  width: 85%; 
+  margin: 10% 0 0 15%;
+  background-color: rgba(229, 231, 231, 0.795);
+  text-align: center;
+  align-items: center;
+  color: rgb(97, 59, 33);
+}
+.artable td, th
+{
+  border: solid rgb(97, 97, 97);
+} 
+.artable tbody tr:before {
+  display: table-cell;
+  vertical-align: middle;
+  color: #978777;
+} 
+tr:nth-child(even)
+{
+  background-color: rgba(173, 121, 138, 0.158);
+} */
+.table-striped > thead, tbody > tr:nth-child(odd) {
+  background-color: rgba(206, 224, 224, 0.795);
+}
+.table-striped > tbody > tr:nth-child(even) {
+  background-color: rgba(219, 193, 202, 0.836);
+}
+#copywrite
+{
+  /* position: absolute;  */
+  color:rgb(76, 90, 121);}
+.addform
+{
+  margin-top: 15%;
+}
+.desc
+{
+  position: fixed;
+  bottom: 5%;
+  color: rgb(68, 44, 28);
+  background-color: rgba(255, 255, 255, 0.521);
+}
+@media screen and (max-width: 925px)  {
+  table  { 
+    display: block ; 
+  }   
+  th  { 
+    position: absolute;
+    top: 0;
+    left: 0;
+    display:block ;
+  }   
+  tr { 
+    display:block;
+  }   
+  td  { 
+    position: relative;
+    width:100%;
+    background-color:White;
+    text-align:left;
+    /* padding-left: 0; */
+    display:block;      
+  }
+  .desc
+  {
+    position: fixed;
+    bottom: 0%;
+    color: rgb(68, 44, 28);
+    background-color: rgba(255, 255, 255, 0.521);
+  }
+}

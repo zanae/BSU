@@ -1,0 +1,68 @@
+body
+{
+    background-image: url("../../img/ei.jpg");
+    background-repeat: no-repeat;
+    background-position: center top;
+    background-size: cover;
+}
+h1
+{
+    text-align: center;
+    font-family: 'Monotype Corsiva', sans-serif;
+    font-size: 300%;
+    color: rgb(128, 139, 187);
+    -webkit-text-stroke: 0.005px rgb(252, 250, 173);
+}
+h2
+{
+    text-align: center;
+    font-family: 'Monotype Corsiva', sans-serif;
+    font-size: 200%;
+}
+a
+{
+    -webkit-text-stroke: 0.01px rgb(97, 76, 76);
+    color: aliceblue;
+}
+.description
+{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    -webkit-text-stroke: 0.5px rgb(97, 76, 76);
+    color: rgb(255, 245, 214);
+}
+.centre
+{
+    text-align: center;
+    float: center;
+}
+.sources
+{
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    padding-bottom: 10%;
+    /* text-align: right; */
+    font-family: 'Courier New', Courier, monospace;
+    color: azure;
+}
+.iconleft
+{
+    float: left;
+}
+.iconright
+{
+    float: right;
+}
+#copyright
+{
+    position: absolute;
+    float: left;
+    bottom: 0;
+    color: white;
+    font-size: 120%;
+}
+#main 
+{
+    float: right;
+    bottom: 0; 
+}
